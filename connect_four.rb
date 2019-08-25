@@ -41,7 +41,7 @@ class Game
             break if checkCombination("o")
             displayBoard()
             #PC_turn()
-            puts "PC turn, press any key to continue"
+            puts "player 2 turn, press any key to continue"
             PC_Turn()
             break if checkCombination("*")
             
@@ -162,8 +162,8 @@ class Game
     end
 
     def gameResults
-        return "You" if checkCombination("o")
-        return "PC" if checkCombination("*")
+        return "player 1" if checkCombination("o")
+        return "player 2" if checkCombination("*")
     end
 
 
